@@ -1,0 +1,143 @@
+@charset 'utf-8';
+
+$fontsize:12px;
+$contenWidth:1280px;
+html,body,div,p,dl,dt,dd,ul,ol,li,table,tr,td,th,form,hr,h1,h2,h3,h4,h5,h6,img,input,fieldset{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+
+.top{
+    font-size: $fontsize;
+    color:#999;
+    width:100%;
+    height:30px;
+    background-color: #eee;
+    
+    .top_bar{
+        width:$contenWidth;
+        height:100%;
+        margin:0 auto;
+        text-align: center;
+        line-height:30px;
+        
+        img{
+            width:18px;
+            height:18px;
+            padding:5px;
+            vertical-align: middle;
+        }
+        .left_bar{
+            float: left;
+            
+            .city{
+                display:inline-block;
+                width:80px;
+                margin-right:5px;
+                float: left;
+            }
+            .city:hover{
+                background-color: #fff;
+            }
+            span,a{
+                float: left;
+            }
+            a{
+                color:#64a131;
+            }
+        }
+        .right_bar{
+            float: right;
+            
+            a,b,span{
+                float: left;
+                padding:0 5px;
+            }
+        }
+    }
+}
+
+
+//nav
+header{
+    background-color:#fff;
+    height:120px;
+    width:100%;
+    
+    .nav{
+        width:$contenWidth;
+        height:120px;
+        padding: 0 10px;
+        
+        .left{
+            height:120px;
+            float: left;
+            
+            .logo{
+            float:left;
+            width:300px;
+            height:120px;
+            background: url(../img/nav_logo.png) center;
+            margin-right:40px;
+            }
+            .btns{
+                float: left;
+                
+                a{
+                    float: left;
+                    width:40px;
+                    height:40px;
+                    padding:0px 20px;
+                    margin:40px 0;
+                    text-align:center;
+                    font-size:$fontsize+2;
+                    color:#999;
+                    border-right: 1px solid #eee;
+                    
+                    &:hover{
+                        background:#eee;
+                    }
+                }
+                a:last-child{
+                    width:80px;
+                    border:none;
+                }
+            }
+        }
+        
+        .right{
+            float: right;
+            height: 120px;
+            font-size: $fontsize;
+            padding: 40px 10px;
+            
+            .serch_box{
+                float: left;
+                
+                .serch{
+                    outline: none;
+                    border:{
+                        left:none;
+                        top: none;
+                        right: none;
+                    }
+                }
+                a{
+                    font-size: $fontsize;
+                    color: #999;
+                }
+            }
+            .shop_car{
+                float: left;
+                width: 42px;
+                height: 52px;
+                background-image: url(../img/shop-car.png);
+            }
+        }
+    }
+
+}
+
